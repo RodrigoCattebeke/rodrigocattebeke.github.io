@@ -1,0 +1,257 @@
+.max-1600{
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root{
+    --link-color: rgba(255, 255, 255, 0.875);
+    --link-color-2: rgb(216, 0, 0);
+    --text-color: rgb(88, 88, 88);
+    --text-color-2: rgb(194, 194, 194) ;
+    --hover-color: rgba(255, 0, 0, 0.821);  
+    --focus-color: rgba(110, 0, 0, 0.821);
+    --btn-color: rgba(255, 0, 0, 0.715);
+    --bg-white: rgb(255, 255, 255);
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+}
+
+.link:hover{
+    color: var(--hover-color);
+
+}
+
+.link:active{
+    color: var(--focus-color);
+}
+
+.text{
+    color: var(--text-color);
+}
+
+/*      NAVBAR   */
+
+.nav-logo{
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.nav-logo:hover{
+    color: var(--hover-color);
+}
+
+.btn-nav{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    transition: color .5s;
+}
+
+.btn-nav:hover{
+    color: var(--hover-color);
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+.browser{
+    width:100%;
+}
+
+.btn-browser{
+    color: white;
+    background-color: var(--btn-color);
+}
+
+.btn-browser:hover{
+    border: 1px solid var(--btn-color);
+}
+
+
+/*  cart offcanvas  */
+
+.cart-number{
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cart-item-container{
+    height: 75%;
+    overflow-y: auto;
+}
+
+.cart-item-purchase{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    min-height: 90px;
+    max-height: 110px;
+    padding: 1px 20px ;
+    background-color: inherit;
+    box-sizing: border-box;
+
+}
+
+.cart-link{
+    text-decoration: none;
+    color: var(--link-color-2);
+    transition: all .5s; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-link:hover{
+    color: var(--hover-color);
+}
+
+.cart-item-price{
+    line-height: 15px;
+    color: var(--text-color);
+}
+
+.add-more{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--text-color);
+}
+
+.add-more :nth-child(1):active , .add-more :nth-child(3):active {
+    color: var(--hover-color);
+}
+
+.trash{
+    color: var(--text-color-2);
+    font-size: 20px;
+    transition: color .5s;
+    cursor: pointer;
+}
+
+.trash:hover{
+    color: var(--hover-color);
+}
+
+.trash:active{
+    color: var(--focus-color);
+    transition: color .1s;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/*   LO MÁS VENDIDO  */
+
+.items-container{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+
+.card{
+    transition: all .5s;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px var(--hover-color);
+}
+
+.card-title{
+    height: 50px;
+    overflow: hidden;
+}
+
+
+/*      CATÁLOGO        */
+.catalogue-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.catalogue-item:hover{
+    box-shadow: 0 0 15px var(--hover-color);
+}
+
+.catalogue-item > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#rifles{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../images/rifles.jpg);    background-size: cover;
+}
+
+#pistolas{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../images/pistols.jpg);    background-size: cover;
+}
+
+#escopetas{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../images/escopetas.jpg);    background-size: cover;
+}
+
+
+/*      FOOTER      */
+
+footer{
+    align-items: center;
+}
+
+.footer-list{
+    list-style:none ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer > div > nav > p{
+    width: max-content;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color .3s;
+}
+
+.footer-link:hover{
+    color: var(--hover-color);
+}
+
+.footer-icon{
+    font-size: 20px;
+}
+
+
+@media (max-height: 400px){
+    .cart-item-container{
+        height: 60%;
+    }
+}

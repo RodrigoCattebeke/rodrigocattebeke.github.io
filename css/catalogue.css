@@ -1,0 +1,8 @@
+.card-img{
+    aspect-ratio: 1/1;
+    object-fit:contain;
+}
+
+.card-title{
+    font-size: 15px;
+}
